@@ -1,0 +1,456 @@
+
+	/*ГЛАВНАЯ СТРАНИЦА (index)*/
+
+*{
+	margin: 0;
+	padding: 1px;
+}
+/*заданный стиль для заголовков h2*/
+h2 {
+	font: normal 170% 'century gothic', arial;
+	margin: 0 0 15px 0;
+	padding: 15px 0 5px 0;
+	color: #000;
+	
+}
+/*Навигационная панель*/
+.menu {
+	list-style: none;
+	text-align: center;
+	background-color: #333;
+}
+.menu a {
+	text-decoration: none;
+	font-family: sans-serif;
+  	color: #fff;
+  	display: inline-block;
+ 	padding: 10px 20px;
+}
+.menu li {
+	display: inline;
+}
+
+/*фон 2 планки*/
+.sidebar {
+	padding: 5px;
+	border: solid 2px #333;
+	border-radius: 4px;
+	background-color: #999;
+
+}
+
+/*Логотип*/
+.logo {
+	display: inline;
+	list-style: none;
+}
+.logo a {
+	text-decoration: none;
+	font-family: sans-serif;
+  	color: #333;
+  	font-size: 26px;
+  	/*двигаем Логотип*/
+  	margin-left: -1600px;
+
+}
+
+.logo li {
+	display: inline;
+
+}
+/*Посковая строка*/
+.form-wrapper input {
+	width: 650px;
+	height: 35px;
+	/*Двигаем поисковую строку*/
+	margin-left: 550px;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+	border: 3px;
+	background: #eee;
+	border-radius: 3px 3px 3px 3px;
+}
+
+.form-wrapper button {
+	
+	width: 75px;
+	border: 3px;
+	padding: 2px;
+	cursor: pointer;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 30px;
+	color: #333;
+	border-radius: 3px 3px 3px 3px;
+}
+
+/*Корзина и личный кабинет*/
+.menu1 {
+	display: inline;
+	list-style: none;
+
+}
+.menu1 a {
+	padding-left: 60px;
+	padding-right: 32px;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: sans-serif;
+  	color: #fff;
+
+}
+.menu1 li {
+	display: inline;
+}
+
+.sidebar_container {
+	float: left;
+	width: 224px;
+	height: 500px;
+	margin-right: 32px;
+}
+/*Фильтр*/
+.sidebar1 {
+	float: left;
+	width:230px;
+	padding: 5%;
+	margin: 16px 0 16px 0;
+	border: solid 1px #f2f2f2;
+	border-radius: 5px;
+	background-color: #a9a9a9;
+}
+
+/* Редактор слова Фильтр  
+.sidebar h2 {
+	color: ; 
+}*/
+
+.filter {
+	list-style: none;
+}
+.filter a {
+	text-decoration: none;
+	font-size: 16px;
+	font-family: sans-serif;
+  	color: #333;
+}
+.filter li a:hover {
+	color: #ff0000;
+}
+
+/*каталог*/
+.product-wrapper {
+	display: inline-block;
+	width: 70%;
+
+	transition: width .2s;
+}
+
+@media only screen and (min-width: 450px) {
+	.product-wrapper {
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.product-wrapper {
+		width: 33.333%;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.product-wrapper {
+		width: 25%;
+	}
+}
+
+
+{box-sizing: border-box;}
+	.product-item {
+		width: 300px;
+		text-align: center;
+		margin: 0 auto;
+		border-bottom: 2px solid #F5F5F5;
+		background: white;
+		font-family: "Open Sans";
+		transition: .3s ease-in;
+}
+.product-item:hover {
+	border-bottom: 2px solid #fc5a5a;
+}
+.product-item img {
+	display: block;
+	width: 100%;
+}
+.product-list {
+	background: #fafafa;
+	padding: 15px 0;
+}
+.product-list h3 {
+	font-size: 18px;
+	font-weight: 400;
+	color: #444444;
+	margin: 0 0 10px 0;
+}
+.price {
+	font-size: 16px;
+	color: #fc5a5a;
+	display: block;
+	margin-bottom: 12px;
+}
+.button {
+	text-decoration: none;
+	display: inline-block;
+	padding: 0 12px;
+	background: #cccccc;
+	color: white;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 28px;
+	transition: .3s ease-in;
+}
+.product-item:hover .button {
+	background: #fc5a5a;
+}
+
+/*Кнопка: Показать еще*/
+.new_content button {
+	margin-left: 900px;
+	margin-top: 55px;
+	border: 3px;
+	padding: 16px;
+	cursor: pointer;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 30px;
+	color: #333;
+	border-radius: 3px 3px 3px 3px;
+}
+
+
+/*новостной баннер*/
+.adaptivny-slayder {
+	
+	position: relative;
+	max-width: 50%;
+	margin: 50px auto;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+.adaptivny-slayder input[name="kadoves"] {
+	display: none;
+}
+
+.kadoves {
+	position: absolute;
+	left: 0;
+	bottom: -40px;
+	text-align: center;
+	width: 100%;
+}
+
+.kadoves label {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	cursor: pointer;
+	margin: 0 3px;
+	box-shadow: 0 0 2px 0 rgba(0, 0, 0, .8);
+	border-radius: 50%;
+	border: 5px solid #2f363c;
+	background-color: #738290;
+}
+
+#slaid1:checked~.kadoves label[for="slaid1"] {
+	background-color: white;
+}
+
+#slaid2:checked~.kadoves label[for="slaid2"] {
+	background-color: white;
+}
+
+#slaid3:checked~.kadoves label[for="slaid3"] {
+	background-color: white;
+}
+
+.adaptivny-slayder-lasekun {
+	overflow: hidden;
+}
+
+.abusteku-deagulus {
+	display: flex;
+	width: 100%;
+	transition: all 0.5s;
+}
+
+.abusteku-deagulus img {
+	width: 100%;
+	flex-shrink:0;
+}
+
+#slaid1:checked~adaptivny-slayder-lasekun abusteku-deagulus {
+	transform: translate(0);
+}
+
+#slaid2:checked~.adaptivny-slayder-lasekun .abusteku-deagulus {
+	transform: translateX(-100%);
+}
+
+#slaid3:checked~.adaptivny-slayder-lasekun .abusteku-deagulus {
+	transform: translateX(-200%);
+}
+
+.hr-washed {
+	margin: 20px 0;
+	padding: 0;
+	height: 0;
+	border: none;
+	box-shadow: 0 0 10px 5px black;
+}
+
+.low_level {
+	list-style: none;
+	text-align: center;
+	background-color: #d3d3d3;
+	border: solid 4px #fff;
+	border-radius: 15px;
+}
+.low_level li {
+	text-decoration: none;
+	font-family: sans-serif;
+  	color: #000000;
+  	display: inline-block;
+ 	padding: 10px 20px;
+}
+
+		/*РЕГИСТРАЦИЯ (registration)*/
+
+.block-registration {
+	margin: 70px 70px 70px 700px ;
+	/*min-height: calc(100vh - 80px);*/
+
+
+}
+.block-registration input {
+	width: 450px;
+	height: 36px;
+	margin-top: 4px;
+	margin-bottom: 16px;
+	font-weight: bold;
+	font-family: Arial, sans-serif;
+	border: solid 2px #999999;
+	border-radius: 5px 5px 5px 5px;
+}
+
+.block-registration button {
+	margin-top: 16px;
+	margin-left: 151px;
+
+	border: 5px;
+	padding: 5px;
+	cursor: pointer;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 30px;
+	border-radius: 5px 5px 5px 5px;
+	border: solid 2px #999999;
+}
+
+/*
+.form-wrapper button {
+	
+	width: 75px;
+	border: 3px;
+	padding: 2px;
+	cursor: pointer;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 30px;
+	color: #333;
+	border-radius: 3px 3px 3px 3px;
+}
+*/
+
+		/*О МАГАЗИНЕ (about)*/
+
+/*.about {
+	
+}
+*/
+
+.about h2 {
+	font-family: sans-serif;
+  	color: #000000;
+ 	text-align:  center;
+}
+.about p {
+	font-family: sans-serif;
+  	color: #000000;
+}
+
+		
+		/*ОТЗЫВЫ ???? (reviews)*/
+
+
+		/*ГАРАНТИИ (warranty)*/
+/*.warranty {
+	
+}
+*/
+
+.warranty h2 {
+	font-family: sans-serif;
+  	color: #000000;
+ 	text-align:  center;
+}
+.warranty p {
+	font-family: sans-serif;
+  	color: #000000;
+}
+
+
+		/*ОПЛАТА (payment)*/
+
+/*.payment {
+	
+}
+*/
+
+.payment h2 {
+	font-family: sans-serif;
+  	color: #000000;
+ 	text-align:  center;
+}
+.text p {
+	font-family: sans-serif;
+  	color: #000000;
+
+}
+
+
+		/*КОНТАНКТЫ (contacts)*/
+
+/*.contacts {
+
+}
+*/
+
+.contacts h2 {
+	font-family: sans-serif;
+  	color: #000000;
+ 	text-align:  center;
+}
+.contacts p {
+	font-family: sans-serif;
+  	color: #000000;
+}
+
+
+		/*КОРЗИНА (basket)*/
+
+
+		/*ЛИЧНЫЙ КАБИНЕТ ???  (personal area)*/
